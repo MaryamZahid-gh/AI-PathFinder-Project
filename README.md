@@ -109,7 +109,6 @@ ai-pathfinder/
 ├── gui_main.py       # Main application and UI
 ├── algorithms.py     # Search algorithm implementations
 ├── grid_model.py     # Grid and Node data structures
-├── requirements.txt  # Project dependencies
 └── README.md         # Project documentation
 ```
 
