@@ -12,7 +12,7 @@ Requirements
 •	Python 3.7+
 •	Pygame 2.0+
 Setup
-git clone https://github.com/yourusername/ai-pathfinder.git
+git clone https://github.com/MaryamZahid-gh/AI-PathFinder-Project
 cd ai-pathfinder
 pip install -r requirements.txt
 Running the App
