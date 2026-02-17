@@ -1,12 +1,10 @@
 AI Pathfinder – Visual Search Algorithms
 
-A Python-based visualization tool that demonstrates uninformed search algorithms using Pygame. This project allows users to see how different algorithms explore a grid step-by-step to find a path from a start point to a target.
+A Python visualization tool for uninformed search algorithms using Pygame. Watch BFS, DFS, UCS, DLS, IDDFS, and Bidirectional Search explore a grid in real-time.
 
----
+---Features
 
- Features
-
-* 6 search algorithms with real-time visualization:
+* 6 search algorithms with step-by-step visualization:
 
   * BFS (Breadth-First Search)
   * DFS (Depth-First Search)
@@ -14,31 +12,28 @@ A Python-based visualization tool that demonstrates uninformed search algorithms
   * DLS (Depth-Limited Search)
   * IDDFS (Iterative Deepening DFS)
   * Bidirectional Search
-* Interactive grid to place:
+* Interactive grid for setting:
 
   * Start node
   * Target node
-  * Obstacles (walls)
-* Live statistics display:
+* Real-time statistics:
 
   * Nodes explored
   * Path length
   * Frontier size
   * Execution time
 * Adjustable visualization speed
-* Dynamic obstacles appearing during search
 * Pause / Resume, Reset, and Clear controls
 
 ---
 
 Requirements
 
-* Python 3.7 or higher
-* Pygame 2.0 or higher
+* Python 3.7+
+* Pygame 2.0+
 
 ---
-
-Installation
+ Installation
 
 Step 1: Clone the Repository
 
@@ -52,7 +47,7 @@ Step 2: Open Project Folder
 cd ai-pathfinder
 ```
 
-Step 3: Install Dependencies
+### Step 3: Install Dependencies
 
 ```
 pip install -r requirements.txt
@@ -78,7 +73,7 @@ This will open the visualization window.
 
 ---
 
- Controls
+Controls
 
 | Action                               | Control     |
 | ------------------------------------ | ----------- |
@@ -88,7 +83,7 @@ This will open the visualization window.
 | Clear grid                           | C           |
 | Adjust speed                         | + / -       |
 | Exit application                     | ESC         |
-| Place start, target, walls           | Mouse Click |
+| Place start and target               | Mouse Click |
 
 ---
 
@@ -103,46 +98,42 @@ Algorithms Overview
 | IDDFS         | Repeated DFS with increasing depth | Yes     | Yes      |
 | Bidirectional | Searches from start and goal       | Yes     | Yes      |
 
-
+Optimal for uniform costs.
 
 ---
 
-## 📁 Project Structure
+Project Structure
 
 ```
 ai-pathfinder/
-│
-├── gui_main.py       # Main application and user interface
-├── algorithms.py     # All search algorithm implementations
-├── grid_model.py     # Grid and node data structures
+├── gui_main.py       # Main application and UI
+├── algorithms.py     # Search algorithm implementations
+├── grid_model.py     # Grid and Node data structures
 ├── requirements.txt  # Project dependencies
 └── README.md         # Project documentation
 ```
 
 ---
 
- Color Legend
+Color Legend
 
-| Color  | Meaning           |
-| ------ | ----------------- |
-| Green  | Start node        |
-| Red    | Target node       |
-| Gray   | Wall/Obstacle     |
-| Yellow | Frontier nodes    |
-| Blue   | Explored nodes    |
-| Purple | Final path        |
-| Orange | Dynamic obstacles |
+| Color  | Meaning        |
+| ------ | -------------- |
+| Green  | Start node     |
+| Red    | Target node    |
+| Yellow | Frontier nodes |
+| Blue   | Explored nodes |
+| Purple | Final path     |
 
 ---
 
-How It Works
+## How It Works
 
 1. Click to place the start point (green)
 2. Click to place the target point (red)
-3. Click to add **walls** (gray)
-4. Press 1–6 to select an algorithm
-5. Press SPACE to start visualization
-6. Watch the algorithm explore and find the path
+3. Press 1–6 to select an algorithm
+4. Press SPACE to start visualization
+5. Watch the algorithm explore and find the path
 
 ---
 
@@ -154,6 +145,6 @@ pygame>=2.0.0
 
 ---
 
-## 📜 License
+License
 
 MIT License – Free to use, modify, and distribute.
